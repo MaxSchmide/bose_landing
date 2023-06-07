@@ -3,11 +3,12 @@
 .input {
   background-color: #f9f9f9;
   border: none;
-  outline: none;
+  outline: 2px solid transparent;
   color: $color-primary;
   padding: 14px 16px;
   border-radius: 8px;
   font-size: 14px;
+  transition: outline 0.3s ease;
 
   &--textarea {
     font-family: inherit;
@@ -18,18 +19,19 @@
     color: #7e7e83;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
+    outline: 2px solid #dbdbdb;
+
     &::placeholder {
       color: $color-primary;
     }
   }
 
-  &:hover {
-    outline: 1px solid #dbdbdb;
-  }
-
   &:focus {
     outline: 2px solid $color-secondary;
+
+    &::placeholder {
+      color: $color-primary;
+    }
   }
 }

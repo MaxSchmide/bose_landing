@@ -19,6 +19,7 @@
   &__bottom {
     padding: 120px;
     background-color: #fcfaef;
+    
     @include gridColumns;
 
     @include onLaptop {

@@ -50,6 +50,7 @@
   &__bottom {
     display: flex;
     flex-direction: column;
+    
     @include paddingContainer;
   }
 }

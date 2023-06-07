@@ -1,6 +1,7 @@
 .row {
   &__box {
     @include gridColumns;
+    
     margin-bottom: 16px;
   }
 
