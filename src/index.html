@@ -35,7 +35,7 @@
 
     <aside class="page__menu menu" id="menu">
       <div class="top-bar">
-        <div class="menu__top mb--48">
+        <div class="menu__top">
           <a href="#" class="top-bar__logo">
             <img src="./assets/logo.png" alt="logo">
           </a>
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="px-default flex-col">
+      <div class="menu__bottom">
         <nav class="nav menu__nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -69,58 +69,57 @@
         </nav>
 
         <a href="tel:+1 234 5555-55-55" class="menu__phone">+1 234 5555-55-55</a>
-
         <a href="tel:+1 234 5555-55-55" class="menu__cta">call to order</a>
       </div>
     </aside>
 
     <main class="main">
-      <section class="recommended px-default" id="recommended">
+      <section class="recommended" id="recommended">
         <h2 class="recommended__title heading">Recommended</h2>
 
         <div class="recommended__wrapper">
-          <article class="recommended__item item">
-            <a href="#" class="item__link">
+          <article class="recommended__product product">
+            <a href="#" class="product__link">
               <img
                 src="./assets/recommend-1.png"
                 alt="BEOSOUND A5 Speaker"
-                class="item__image"
+                class="product__image"
               >
             </a>
-            <h4 class="item__title title">BEOSOUND A5</h4>
-            <p class="item__paragraph paragraph">Huge sound anywhere – in the home or outdoors. Beosound A5 is a Wi-Fi and Bluetooth speaker with long-lasting battery and wireless charging built in.</p>
-            <span class="item__price">$ 1299.00</span>
+            <h4 class="product__title title">BEOSOUND A5</h4>
+            <p class="product__paragraph paragraph">Huge sound anywhere – in the home or outdoors. Beosound A5 is a Wi-Fi and Bluetooth speaker with long-lasting battery and wireless charging built in.</p>
+            <span class="product__price">$ 1299.00</span>
           </article>
 
-          <article class="recommended__item item">
-            <a href="#" class="item__link">
+          <article class="recommended__product product">
+            <a href="#" class="product__link">
               <img
                 src="./assets/recommend-2.png"
                 alt="BEOPLAY HX Headphones"
-                class="item__image"
+                class="product__image"
               >
             </a>
-            <h4 class="item__title title">BEOPLAY HX</h4>
-            <p class="item__paragraph paragraph">Wireless noise-cancelling headphones. Listen in comfort whether you're on a call, working from home or taking a moment for yourself.</p>
-            <span class="item__price">$ 499.00</span>
+            <h4 class="product__title title">BEOPLAY HX</h4>
+            <p class="product__paragraph paragraph">Wireless noise-cancelling headphones. Listen in comfort whether you're on a call, working from home or taking a moment for yourself.</p>
+            <span class="product__price">$ 499.00</span>
           </article>
 
-          <article class="recommended__item item">
-            <a href="#" class="item__link">
+          <article class="recommended__product product">
+            <a href="#" class="product__link">
               <img
                 src="./assets/recommend-3.png"
                 alt="BEOSOUND THEATRE Soundbar"
-                class="item__image"
+                class="product__image"
               >
             </a>
-            <h4 class="item__title title">BEOSOUND THEATRE</h4>
-            <p class="item__paragraph paragraph">Four patent-pending acoustic innovations in one sleek soundbar envelop you in sound from every angle. Made to fit any TV, and last for generations.</p>
-            <span class="item__price">$ 3199.00</span>
+            <h4 class="product__title title">BEOSOUND THEATRE</h4>
+            <p class="product__paragraph paragraph">Four patent-pending acoustic innovations in one sleek soundbar envelop you in sound from every angle. Made to fit any TV, and last for generations.</p>
+            <span class="product__price">$ 3199.00</span>
           </article>
         </div>
       </section>
 
-      <section class="gallery px-default" id="gallery">
+      <section class="gallery" id="gallery">
         <h2 class="gallery__title heading">Sound. Vision.<br>It’s your pick.</h2>
 
         <div class="gallery__wrapper">
@@ -234,7 +233,7 @@
               cols="30"
               rows="10"
               placeholder="Message"
-              class="input mb--32"
+              class="input input--textarea"
               required
             ></textarea>
 

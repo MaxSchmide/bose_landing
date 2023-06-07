@@ -8,6 +8,12 @@
   padding: 14px 16px;
   border-radius: 8px;
   font-size: 14px;
+
+  &--textarea {
+    font-family: inherit;
+    margin-bottom: 32px;
+  }
+
   &::placeholder {
     color: #7e7e83;
   }

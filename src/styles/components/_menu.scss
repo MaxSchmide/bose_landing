@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 48px;
   }
 
   &__phone {
@@ -44,5 +45,11 @@
 
   &__nav {
     margin-bottom: 40px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    @include paddingContainer;
   }
 }

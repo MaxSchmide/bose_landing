@@ -1,14 +1,15 @@
 @mixin gridColumns {
+  --columns: 12;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(var(--columns), 1fr);
   column-gap: 24px;
 
   @include onLaptop {
-    grid-template-columns: repeat(6, 1fr);
+    --columns: 6;
   }
 
   @include onMobile {
-    grid-template-columns: repeat(2, 1fr);
+    --columns: 2;
     column-gap: 20px;
   }
 }
@@ -22,5 +23,20 @@
 @mixin onMobile {
   @media (min-width: 320px) and (max-width: 743px) {
     @content;
+  }
+}
+
+@mixin paddingContainer {
+  padding-left: 120px;
+  padding-right: 120px;
+
+  @include onLaptop {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  @include onMobile {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
